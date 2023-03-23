@@ -40,8 +40,11 @@ header{
 
 .item-animation{
     border-bottom: 3px solid white;
-    transition: .5s ease all;
 }
+
+.item-animation:hover{
+    border-bottom: 3px solid green;
+} 
 
 a{
     text-decoration: none;
@@ -50,15 +53,15 @@ a{
     font-weight: 600;
 }
 
-.item-animation:hover{
-    border-bottom: 3px solid green;
+.item-animation, .item-animation:hover, ul li a i:hover{
     transition: .5s ease all;
-} 
-
-a:hover{
-    color: green;
 }
 
+/* codigo dry */
+.nav-container a:hover, ul li a i:hover{
+    color: green;
+}
+/* . */
 .right-list{
     margin: 0 50px;
     padding: 0 20px;
@@ -83,11 +86,11 @@ main{
     height: 600px;
     background-color: white;
 }
+
 /* footer */
 
 footer{
     width: 100vw;
-    height: 10vh;
     box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
 }
 
@@ -106,3 +109,12 @@ footer ul li i{
     font-size: 30px;
     color: black;
 }
+.container{
+    width: 90vw;
+    margin: auto;
+}
+.container p{
+    text-align:center;
+}
+
+/* configuracion responsive a 650px */
