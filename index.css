@@ -64,6 +64,15 @@ a:hover{
     padding: 0 20px;
 }
 
+.right-list a{
+    display: flex;
+}
+
+.right-list i{
+    padding-right: 10px;
+    padding-top: 2px;
+}
+
 .right-list p{
     padding-bottom: 20px;
 }
@@ -80,4 +89,20 @@ footer{
     width: 100vw;
     height: 10vh;
     box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li{
+    margin: 20px 10px;
+}
+
+footer ul li i{
+    font-size: 30px;
+    color: black;
 }
