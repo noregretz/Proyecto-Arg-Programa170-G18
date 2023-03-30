@@ -4,29 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de cursos y recursos</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/7ddcef2803.js" crossorigin="anonymous"></script>
-    <title>Guia de cursos y recursos</title>
 </head>
 <body>
     <header>
-        <nav class="nav-container">
-            <ul class="list-container">
-                <li class="list-item img-item"><a href="#"><img src="https://picsum.photos/id/684/600/400" alt=""></a></li>
+        <a href=""><img src="https://picsum.photos/id/684/600/400" alt=""></a>
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav class="nav-container" id="nav">
+            <ul class="list-container">                
+                <button id="cerrar" class="cerrar-menu" ><i class="fa-solid fa-xmark"></i></button>
                 <li class="list-item item-animation"><a href="#">Home</a></li>
                 <li class="list-item item-animation"><a href="#">Guias</a> </li>
                 <li class="list-item item-animation"><a href="#">Recursos</a></li>
+                <li class="list-item"><a href=""><i class="fa-sharp fa-regular fa-envelope"></i> Registrate</a></li>
             </ul>
-            <div class="middle-list">
-                <ul class="hamburguer">
-                    <li><i class="fa-solid fa-bars"></i></li>
-                </ul>
-            </div>
-            <div class="right-list">
-                <a href="#">
-                    <i class="fa-sharp fa-regular fa-envelope"></i><p>Newsletter</p>   
-                </a>
-            </div>
         </nav>    
     </header>
     <main>
@@ -42,8 +35,8 @@
                 <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
             </ul>
             <p>Ⓒ2023 Nombre de la pagina. Todos los derechos reservados.</p>
-        </div>
-        
+        </div>    
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
