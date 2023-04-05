@@ -14,7 +14,7 @@ function menuDesplegable(){
 
 function catalogo(){
     const contenedorHTML = document.getElementById("catalogo")
-    fetch("../database.json")
+    fetch("database.json")
     .then(response => response.json())
     .then(data => {
         for(producto of data){
