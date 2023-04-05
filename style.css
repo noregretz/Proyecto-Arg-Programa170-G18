@@ -5,18 +5,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
     display: flex;
     justify-content: space-around;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
-    height: 50px;
-    font-family: 'Roboto', sans-serif;
+    /* box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);  */
 }
 
-
+header img{
+    width: 180px;
+    margin: 10px auto 0 auto;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -25,14 +26,14 @@ header{
 
 .list-container{
     display: flex;
-    align-items: center; 
+    align-items: center;
     list-style: none;
 }
 
 .list-container .list-item{
     margin: 20px;
-    padding: 0;   
-} 
+    padding: 0;
+}
 
 .list-container .item-animation{
     border-bottom: 3px solid white;
@@ -40,8 +41,8 @@ header{
 }
 
 .list-container .item-animation:hover{
-    border-bottom: 3px solid green;
-} 
+    border-bottom: 3px solid rgb(180,157,131);
+}
 
 .list-container  a{
     text-decoration: none;
@@ -50,12 +51,8 @@ header{
     font-weight: 600;
 }
 
-/* .item-animation, .item-animation:hover, ul li a i:hover{
-    transition: .2s ease-in-out;
-} */
-
 .nav-container a:hover, ul li a i:hover, .cerrar-menu i:hover{
-    color: green;
+    color: rgb(180,157,131);
 }
 
 .abrir-menu, .cerrar-menu{
@@ -64,83 +61,166 @@ header{
 
 /* main */
 main{
-    margin: 20px 0;
-    height: 600px;
+    margin-top: 10px;
     background-color: white;
 }
-.marca{
-   display: flex;
-   justify-content: center;
-   font-size: 50px;
-   margin: 20px 0 30px 0;
-}
 
-.descuento{
-    background-color: orange;
-    color:#1c1c1c;
-    height: 180px;
+/* nueva seccion */
+.presentacion{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://www.vitamina.com.ar/media/wysiwyg/2-Home-Denim_2.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.presentacion .marca{
+    width: 600px;
+    margin: auto;
+    color: white;
+}
+.presentacion .marca a{
+    text-decoration: none;
+    color: white;
+}
+
+.presentacion .marca a h1{
     text-align: center;
-    font-family: 'Acme', sans-serif;
-    flex-direction: column;
-    font-size: 30px;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0px -5px 10px 0px rgba(230, 116, 16, 0.1);
-    margin: 15px 5px 15px 5px;
+    font-size: 45px;
 }
 
-.boton-descuento{
-    height: 46px;
-    width: 108px;
-    font-size: 20px;
-    border-radius: 5px;
-    background-color: #1c1c1c;
-    color: beige;
-    font-family: 'Acme', sans-serif;
-    margin: 5px;
+.presentacion .marca a p{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(180,157,131);
+    margin: auto;
 }
 
-.nueva-temporada{
-    background-color: rgb(66, 164, 194);
-    color:#1c1c1c;
-    height: 200px;
+/* nueva seccion */
+
+.otoño-invierno{
+    width: 100vw;
     display: flex;
-    text-align: center;
-    font-family: 'Acme', sans-serif;
-    flex-direction: column;
-    font-size: 30px;
-    justify-content: space-evenly;
+    margin: 60px auto;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.otoño-invierno .descripcion{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 0px -5px 10px 0px rgba(16, 230, 226, 0.1);
-    margin: 15px 5px 15px 5px;
+    width: 50vw;
+    height: 300px;
 }
 
-.boton-temporada{
-    height: 46px;
-    width: 108px;
+.otoño-invierno .descripcion .coleccion{
+    width: 30vw;
+    max-height:300px;
+}
+
+.otoño-invierno .descripcion .coleccion h2{
+    font-size: 30px;
+}
+
+.otoño-invierno .descripcion .coleccion p{
     font-size: 20px;
-    border-radius: 5px;
-    background-color: #ebe0e0;
-    color: rgb(20, 20, 13);
-    font-family: 'Acme', sans-serif;
-    margin: 5px;
+    font-weight: 500;
+    margin: 20px auto;
 }
 
+.otoño-invierno .descripcion .coleccion h2, .otoño-invierno .descripcion .coleccion p{
+    text-align: center;
+}
+
+.otoño-invierno a{
+    text-decoration: none;
+}
+
+.otoño-invierno a .imagen-venta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://1.bp.blogspot.com/-LBjXVqk0vfw/XHt6FDml8HI/AAAAAAABnvY/lVPHHEg7UiAs3oyy-aAZsjCZRuD2NEYVwCEwYBhgL/w1200-h630-p-k-no-nu/moda%2Boto%25C3%25B1o%2Binvierno%2B2019%2Bargentina.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.otoño-invierno a .imagen-venta .coleccion h2{
+    font-size: 30px;
+    color: white;
+    margin: auto;
+}
+
+/* nueva seccion */
+
+.productos .destacados{
+    margin:40px auto;
+}
+
+.productos .destacados h4{
+    text-align: center;
+    font-size: 30px;
+}
+
+.productos .catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+.productos .catalogo .elemento{
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.productos .catalogo .elemento img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.productos .catalogo .elemento h5{
+    font-size: 20px;
+}
+
+.productos .catalogo .elemento .precio{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.productos .catalogo .elemento .precio a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding:7px 5px;
+    border-radius: 5px;
+    background-color: rgb(180,157,131,0.8);
+}
+
+/* nueva seccion */
 .estilo{
     display: flex;
-    text-align: center;
     flex-direction: column;
-    margin: 40px 0 40px 0;
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
     align-items: center;
+    margin: 40px 0;
 }
 
-.estilo h2{
+.estilo h4{
     font-size: 35px;
-    
 }
 
 .estilo p{
@@ -149,43 +229,25 @@ main{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.boton-estilo{
-    height: 70px;
-    width: 170px;
-    background-color: #121212;
-    color: whitesmoke;
+.estilo a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #1c1c1c;
     font-size: 32px;
+    border-radius: 5px;
+    padding: 5px 10px;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
-
-}
-
-.destacados{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    
-    margin: 20px;
-
-}
-
-.imagenes-destacados{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 30px 0 30px 0;
-}
-
-.imagenes-destacados img {
-    height: 380px;
-    width: auto;
-
 }
 
 /* footer */
 
 footer{
-    width: 100vw;
     box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
+}
+
+footer .container{
+    width: 90vw;
+    margin: auto;
 }
 
 footer ul{
@@ -195,38 +257,30 @@ footer ul{
     align-items: center;
 }
 
-footer ul li{
+footer .container ul li{
     margin: 20px 10px;
 }
 
-footer ul li i{
+footer .container ul li i{
     font-size: 30px;
     color: black;
 }
-.container{
-    width: 90vw;
-    margin: auto;
-}
+
 .container p{
     text-align:center;
 }
 
-/* configuracion responsive a 1024px */
 
-@media screen and (max-width: 1024px){
-
-}
-
-/* configuracion responsive a 650px */
+/* configuracion responsive a 750px */
 
 @media screen and (max-width: 750px){
-    
+
     header{
         justify-content: space-around;
     }
 
     header img{
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .abrir-menu, .cerrar-menu{
@@ -241,7 +295,8 @@ footer ul li i{
         margin-left: 150px;
     }
     .abrir-menu{
-        margin-left: 110px;
+        margin:auto 0 auto 110px;
+        padding-bottom: 10px;
         color: rgb(33,33,33);
     }
 
@@ -281,4 +336,61 @@ footer ul li i{
         border-bottom: 0;
         padding: 0;
     }
+
+    /* main */
+    /* Nueva seccion */
+    .presentacion{
+        width: 99vw;
+        margin: -10px 0 0 0;
+        max-height: 320px;
+        background-size:cover;
+        box-shadow: none;
+    }
+
+    .presentacion .marca h1{
+        font-size: 25px;
+        margin: auto;
+    }
+
+    .presentacion .marca p{
+        font-size: 15px;
+    }
+
+    /* Nueva seccion */
+    
+    .otoño-invierno{
+        margin: auto;
+        display: block;
+    }
+
+    .otoño-invierno .descripcion{
+        width: 99vw;
+        height: 250px;
+    }
+
+    .otoño-invierno .descripcion .coleccion{
+        text-align: center;
+        width: 80vw;
+    }
+
+    .otoño-invierno a .imagen-venta{
+            width: 99vw;
+            height: 200px;
+            background-size: 100%;
+    }
+
+    .otoño-invierno .descripcion .coleccion h2, .imagen-venta .coleccion h2{
+        font-size: 30px;
+    }
+
+    .otoño-invierno .descripcion .coleccion p{
+        font-size: 20px;
+    }
+
+    /* Nueva seccion */
+    
+    .productos .catalogo .elemento{
+        width: 70vw;
+    }
+
 }

@@ -10,76 +10,71 @@
 </head>
 <body>
     <header>
-        <a href=""><img src="logo pendiente" alt=""></a>
+        <a href=""><img src="../img/logo.jpg" alt=""></a>
         <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
         <nav class="nav-container" id="nav">
             <ul class="list-container">                
                 <button id="cerrar" class="cerrar-menu" ><i class="fa-solid fa-xmark"></i></button>
-                <li class="list-item item-animation"><a href="#">Nuevo</a></li>
-                <li class="list-item item-animation"><a href="#">Pantalones</a> </li>
+                <li class="list-item item-animation"><a href="#">Home</a></li>
+                <li class="list-item item-animation"><a href="#">Pantalones</a></li>
                 <li class="list-item item-animation"><a href="#">Remeras</a></li>
                 <li class="list-item item-animation"><a href="#">Buzos</a></li>
-                <li class="list-item item-animation"><a href="#">Accesorios</a> </li>
                 <li class="list-item item-animation"><a href="#">Sale</a></li>
-                <li class="list-item"><a href=""><i class="fa-sharp fa-regular fa-envelope"></i> </a></li>
+                <li class="list-item"><a href="#"><i class="fa-sharp fa-regular fa-envelope"></i> </a></li>
             </ul>
         </nav>    
     </header>
     <main>
-        <div class="marca">
-               Nombre/LOGO de la marca aca
-        </div>
-
-        <div class="descuento">
-            <h2 class="encabezado">Hasta 30% OFF</h2>
-            <div class="botones">
-                <button class="boton-descuento">Hombre</button>
-                <button class="boton-descuento">Mujer</button>
+        <section class="presentacion">
+            <div class="marca">
+                <a href="#catalogo">
+                    <h1>RYOKO</h1>
+                    <p>FALL/WINTER '23</p>
+                </a>
+                
             </div>
-        </div>
-
-        <div class="nueva-temporada">
-            <h2 class="encabezado">Nueva temporada 2023</h2>
-            <div class="botones">
-                <button class="boton-temporada">Hombre</button>
-                <button class="boton-temporada">Mujer</button>
-                <button class="boton-temporada">Accesorios</button>
+        </section>
+        <section class="otoño-invierno">
+            <div class="descripcion">
+                <div class="coleccion">
+                    <h2>Invierno en la ciudad</h2>
+                    <p>Una coleccion diseñada para mujeres que les gusta desafiar su propio estilo.</p>
+                </div>
+                
             </div>
-        </div>
+            <a href="#">
+                <div class="imagen-venta">
+                    <div class="coleccion">
+                        <h2>FALL/WINTER '23</h2>
+                    </div>   
+                </div>   
+            </a>  
+        </section>
+        <section class="estilo">    
+            <h4>Encontra tu LOOK</h4>
+            <p>Responde estas breves preguntas y recibi nuestras recomendaciones personalizadas</p>
+            <a href="#">Mi LOOK</a>
+        </section>
 
-        <div class="estilo">
-            <h2>Encontrá tu LOOK    </h2>
-            <p>Responde estas breves preguntas y recibí nuestras recomendaciones personalizas</p>
-            <button class="boton-estilo">Mi LOOK</button>
-
-        </div>
-
-        <div class="destacados">
-            <h2>Destacados</h2>
-        </div>
-
-        <div class="imagenes-destacados">
-            <img src="img/buso.jpg" alt="">
-            <img src="img/cinto.jpg" alt="">
-            <img src="img/pantalones.jpg" alt="">
-            <img src="img/remera.jpg" alt="">
-        </div>
-
-
+        <section class="productos">
+            <div class="destacados"><h4>Destacados</h4></div>
+            <div id="catalogo" class="catalogo"></div>
+            <!-- en esta seccion trabajo con el json -->
+        </section>    
     </main>
     
-    <!-- <footer>
+    <footer>
         <div class="container">
             <ul>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
             </ul>
-            <p>Ⓒ2023 Nombre de la pagina. Todos los derechos reservados.</p>
+            <p>Ⓒ2023 Ryoko. Todos los derechos reservados.</p>
         </div>    
-    </footer>-->
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
