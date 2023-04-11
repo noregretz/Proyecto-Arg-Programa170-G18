@@ -35,5 +35,7 @@ function catalogo(){
     .catch(error => console.log(error))
 }
 
+
+
 catalogo();
 menuDesplegable();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7ddcef2803.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <a href=""><img src="./img/logo.jpg" alt=""></a>
         <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
         <nav class="nav-container" id="nav">
-            <ul class="list-container">                
-                <button id="cerrar" class="cerrar-menu" ><i class="fa-solid fa-xmark"></i></button>
+            <ul class="list-container">
+                <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark"></i></button>
                 <li class="list-item item-animation"><a href="#">Home</a></li>
                 <li class="list-item item-animation"><a href="#">Pantalones</a></li>
                 <li class="list-item item-animation"><a href="#">Remeras</a></li>
@@ -22,7 +24,7 @@
                 <li class="list-item item-animation"><a href="#">Sale</a></li>
                 <li class="list-item"><a href="#"><i class="fa-sharp fa-regular fa-envelope"></i> </a></li>
             </ul>
-        </nav>    
+        </nav>
     </header>
     <main>
         <section class="presentacion">
@@ -31,7 +33,32 @@
                     <h1>RYOKO</h1>
                     <p>FALL/WINTER '23</p>
                 </a>
-                
+            </div>
+        </section>
+        <section class="club">
+            <div id="formulario">
+                <form >
+                    <div class="inputContainer">
+                        <input id="nombre" type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="apellido" type="text" placeholder="Apellido" required>
+                    </div> 
+                    <div class="inputContainer">
+                        <input id="email" type="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="contrasena" type="password" placeholder="Contraseña" required>
+                    </div>                    
+                    <button id="boton-club" type="submit">UNIRME</button>
+                </form>
+            </div>
+
+            <div id="invitacion">
+                <h2>Sumate a RYOKO Club</h2>
+                <p>Sumá puntos, obtené descuentos y llega primero a los nuevos lanzamientos</p>
+            </div>
+            <div class="tarjeta-socio">              
             </div>
         </section>
         <section class="otoño-invierno">
@@ -40,29 +67,27 @@
                     <h2>Invierno en la ciudad</h2>
                     <p>Una coleccion diseñada para mujeres que les gusta desafiar su propio estilo.</p>
                 </div>
-                
+
             </div>
-            <a href="#">
+            <a href="/form.html">
                 <div class="imagen-venta">
                     <div class="coleccion">
                         <h2>FALL/WINTER '23</h2>
-                    </div>   
-                </div>   
-            </a>  
+                    </div>
+                </div>
+            </a>
         </section>
-        <section class="estilo">    
-            <h4>Encontra tu LOOK</h4>
-            <p>Responde estas breves preguntas y recibi nuestras recomendaciones personalizadas</p>
-            <a href="#">Mi LOOK</a>
-        </section>
+        
 
         <section class="productos">
-            <div class="destacados"><h4>Destacados</h4></div>
+            <div class="destacados">
+                <h4>Destacados</h4>
+            </div>
             <div id="catalogo" class="catalogo"></div>
             <!-- en esta seccion trabajo con el json -->
-        </section>    
+        </section>
     </main>
-    
+
     <footer>
         <div class="container">
             <ul>
@@ -73,8 +98,9 @@
                 <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
             </ul>
             <p>Ⓒ2023 Ryoko. Todos los derechos reservados.</p>
-        </div>    
+        </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="/script.js"></script>
 </body>
+
 </html>
