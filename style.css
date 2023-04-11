@@ -276,7 +276,7 @@ footer .container ul li i{
     width: 100vw;
     display: flex;
     margin: 60px auto;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.228);
 }
 
 #formulario{
@@ -286,7 +286,7 @@ footer .container ul li i{
     flex-direction: column;
     width: 50vw;
     height: 500px;
-    background: linear-gradient(to left, #f6b11b, #b80000);
+    background: linear-gradient(to left, #f6b11b, #f9a201);
 }
 
 
@@ -324,6 +324,47 @@ footer .container ul li i{
     letter-spacing: 2px;
     margin: 30px 0 0 60px;
 }
+
+.tarjeta-socio{
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+    flex-direction: column;
+    width: 50vw;
+    height: 500px;
+    background: linear-gradient(to left, #f6b11b, #f9a201);   
+    
+}
+
+#nueva-tarjeta{
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    border: 3px solid;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 18px 60px;
+    letter-spacing: 2px;
+    margin: 50px 80px 50px 50px;
+}
+
+#nueva-tarjeta p {
+    font-size: 30px;
+    margin: 20px 
+}
+
+#nueva-tarjeta h2{
+    font-size: 50px;
+    margin: 20px 
+}
+
+#nueva-tarjeta i{
+    font-size: 40px;    
+    margin-left: 80%; 
+}
+
+
 
 
 /* configuracion responsive a 750px */

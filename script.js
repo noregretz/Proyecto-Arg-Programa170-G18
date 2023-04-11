@@ -1,3 +1,43 @@
+const socio = document.querySelector("#agregar-socio")
+const formulario = document.querySelector("#formulario")
+const tarjeta = document.querySelector(".tarjeta-socio")
+const usuarios = []
+tarjeta.style.display = "none"
+
+const tarjetaClub = () => {
+    formulario.style.display = "none"
+    for( const usuario of usuarios){
+    tarjeta.innerHTML = `
+    <div id="nueva-tarjeta">
+        <h2>${usuario.nombre} ${usuario.apellido}</h2>
+
+        <p>¡Bienvenid@ a nuestro club!</p>
+
+        <p>Te dejamos un regalito de bienvenida en tu correo</p>
+
+        <i class="fa-sharp fa-solid fa-gift"></i>
+    </div>
+    `
+    tarjeta.style.display = "flex"
+}
+}
+
+socio.addEventListener("submit",(event) => {
+    
+    event.preventDefault()
+    usuarios.push({
+        nombre: socio.nombre.value,
+        apellido: socio.apellido.value,
+        email: socio.email.value,
+        contraseña: socio.contrasena.value
+
+    })
+
+    tarjetaClub()
+})
+
+
+
 function menuDesplegable(){
     const nav = document.querySelector("#nav")
     const abrir = document.querySelector("#abrir")
@@ -34,6 +74,8 @@ function catalogo(){
     })
     .catch(error => console.log(error))
 }
+
+
 
 
 
