@@ -36,30 +36,37 @@
             </div>
         </section>
         <section class="club">
+            <div class="tarjeta-socio"> 
+                <div id="nueva-tarjeta">
+                    
+                </div>             
+            </div>
             <div id="formulario">
-                <form >
+                <form id="agregar-socio">
                     <div class="inputContainer">
-                        <input id="nombre" type="text" placeholder="Nombre" required>
+                        <input id="nombre" type="text" placeholder="Nombre" >
                     </div>
                     <div class="inputContainer">
-                        <input id="apellido" type="text" placeholder="Apellido" required>
+                        <input id="apellido" type="text" placeholder="Apellido" >
                     </div> 
                     <div class="inputContainer">
-                        <input id="email" type="email" placeholder="Correo electrónico" required>
+                        <input id="email" type="email" placeholder="Correo electrónico" >
                     </div>
                     <div class="inputContainer">
-                        <input id="contrasena" type="password" placeholder="Contraseña" required>
+                        <input id="contrasena" type="password" placeholder="Contraseña" >
                     </div>                    
                     <button id="boton-club" type="submit">UNIRME</button>
                 </form>
+                
+            </div>
+            
             </div>
 
             <div id="invitacion">
                 <h2>Sumate a RYOKO Club</h2>
                 <p>Sumá puntos, obtené descuentos y llega primero a los nuevos lanzamientos</p>
             </div>
-            <div class="tarjeta-socio">              
-            </div>
+            
         </section>
         <section class="otoño-invierno">
             <div class="descripcion">
@@ -100,7 +107,11 @@
             <p>Ⓒ2023 Ryoko. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="/script.js"></script>
+    
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>

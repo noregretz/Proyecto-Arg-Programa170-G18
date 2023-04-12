@@ -97,8 +97,9 @@ main{
 
 .presentacion .marca a p{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(180,157,131);
+    -webkit-text-stroke: 1px #1a1515;
     margin: auto;
 }
 
@@ -210,6 +211,17 @@ main{
     background-color: rgb(180,157,131,0.8);
 }
 
+.productos .catalogo .elemento .precio a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding:16px 34px;
+    border-radius: 5px;
+    background-color: rgba(102, 85, 65, 0.8);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,0.3);
+}
+
 /* nueva seccion */
 .estilo{
     display: flex;
@@ -276,7 +288,7 @@ footer .container ul li i{
     width: 100vw;
     display: flex;
     margin: 60px auto;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.228);
 }
 
 #formulario{
@@ -286,7 +298,7 @@ footer .container ul li i{
     flex-direction: column;
     width: 50vw;
     height: 500px;
-    background: linear-gradient(to left, #f6b11b, #b80000);
+    background: linear-gradient(to left, #f5bf35, #f9a201);
 }
 
 
@@ -315,7 +327,7 @@ footer .container ul li i{
 
 #boton-club{
     border-radius: 20px;
-    border-color: #FFFFFF;
+    border-color: #fefeaf;
     background-color: transparent;
     color: #FFFFFF;
     font-size: 23px;
@@ -324,6 +336,59 @@ footer .container ul li i{
     letter-spacing: 2px;
     margin: 30px 0 0 60px;
 }
+
+#boton-club:hover{
+    border-radius: 20px;
+    border-color: #0a0909;
+    background-color: transparent;
+    color: #060505;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 18px 80px;
+    letter-spacing: 2px;
+    margin: 30px 0 0 60px;
+}
+
+.tarjeta-socio{
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+    flex-direction: column;
+    width: 50vw;
+    height: 500px;
+    background: linear-gradient(to left, #f5bf35, #f9a201);   
+    
+}
+
+#nueva-tarjeta{
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    border: 3px solid;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 18px 60px;
+    letter-spacing: 2px;
+    margin: 50px 80px 50px 50px;
+}
+
+#nueva-tarjeta p {
+    font-size: 30px;
+    margin: 20px 
+}
+
+#nueva-tarjeta h2{
+    font-size: 50px;
+    margin: 20px 
+}
+
+#nueva-tarjeta i{
+    font-size: 40px;    
+    margin-left: 80%; 
+}
+
+
 
 
 /* configuracion responsive a 750px */
