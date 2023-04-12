@@ -1,4 +1,3 @@
-
 const socio = document.querySelector("#agregar-socio")
 const formulario = document.querySelector("#formulario")
 const tarjeta = document.querySelector(".tarjeta-socio")
@@ -27,33 +26,16 @@ const tarjetaClub = () => {
 socio.addEventListener("submit",(event) => {
     
     event.preventDefault()
-
     usuarios.push({
         nombre: socio.nombre.value,
         apellido: socio.apellido.value,
         email: socio.email.value,
-        contrasena: socio.contrasena.value
+        contraseña: socio.contrasena.value
 
     })
 
-    if (!nombre.value || !apellido.value || !email.value || !contrasena.value) {
-        Swal.fire({
-            title: 'Por favor complete todos los campos obligatorios',
-            confirmButtonText: "Entendido",
-            confirmButtonColor: '#f9a201',
-            padding: "2rem",
-            icon: "warning",
-            background: "#eee",
-        })
-       
-        }
-    else{
-        tarjetaClub()
-    }
-
+    tarjetaClub()
 })
-
-
 
 
 
