@@ -100,8 +100,8 @@ main{
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(237,169,39);
-    -webkit-text-stroke: 1px #1a1515;
+    color: rgb(210, 163, 78);
+    text-shadow: -1px -1px 2px rgb(34, 32, 32);
     margin: auto;
 }
 
@@ -121,14 +121,14 @@ main{
     flex-direction: column;
     width: 50%;
     height: 500px;
-    background: linear-gradient(to left, #f5b30d, #f9a201);
+    background: linear-gradient(to left, #edc9ba, #a88c80);
 }
 
 #formulario input{
 	background-color: #eee;
     border: none;
     border-radius: 8px;
-	padding: 24px 10px;
+	padding: 14px 20px;
 	margin: 8px 0;
 	width: 100%;
     font-size: 20px;
@@ -196,7 +196,7 @@ main{
     flex-direction: column;
     width: 50%;
     height: 500px;
-    background: linear-gradient(to left, #f5bf35, #f9a201);   
+    background: linear-gradient(to left, #edc9baa4, #a88c80);   
     
 }
 

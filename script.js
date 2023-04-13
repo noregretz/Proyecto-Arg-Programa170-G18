@@ -40,7 +40,7 @@ function formulario(){
             Swal.fire({
                 title: 'Por favor complete todos los campos obligatorios',
                 confirmButtonText: "Entendido",
-                confirmButtonColor: '#f9a201',
+                confirmButtonColor: '#a18173',
                 padding: "2rem",
                 icon: "warning",
                 background: "#eee",
