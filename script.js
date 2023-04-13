@@ -81,7 +81,7 @@ function catalogo(){
                     <h5>${producto.tipo}</h5>
                 </div>
                 <div class="precio">
-                    <a href="#">${producto.precio}</a>
+                    <a href="#formulario">${producto.precio}</a>
                 </div>    
             </div>
             `
