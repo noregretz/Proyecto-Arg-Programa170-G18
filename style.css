@@ -517,15 +517,11 @@ footer .container ul li i:hover{
 
     #invitacion{
         background-size: cover;
-
     }
 
-    #boton-club{
-        padding: 10px 40px;
-    }
-
-    #boton-club:hover{
-        padding: 10px 40px;
+    #boton-club, #boton-club:hover{
+        margin: 7px auto;
+        padding: 7px 10px;
     }
 
     #formulario input{
@@ -540,6 +536,34 @@ footer .container ul li i:hover{
     #agregar-socio{
         width: 80%;
     }
+
+    .tarjeta-socio{
+        width: 100%;
+        height: 350px;
+    }
+    #nueva-tarjeta{
+        text-align: start;
+        font-weight: bold;
+        padding: 20px 0;
+        letter-spacing: 2px;
+        margin: 0 10px;
+    }
+    
+    #nueva-tarjeta p{
+        text-align: center;
+        font-size: 25px; 
+    }
+    
+    #nueva-tarjeta h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    #nueva-tarjeta i{
+        font-size: 40px;    
+        margin-left: 80%; 
+    }
+
 
     /* Nueva seccion */
     
