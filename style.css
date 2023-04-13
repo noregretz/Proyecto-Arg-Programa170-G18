@@ -6,12 +6,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header{
     display: flex;
     justify-content: space-around;
-    /* box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);  */
 }
 
 header img{
@@ -41,7 +42,7 @@ header img{
 }
 
 .list-container .item-animation:hover{
-    border-bottom: 3px solid rgb(180,157,131);
+    border-bottom: 3px solid rgb(237,169,39);
 }
 
 .list-container  a{
@@ -52,7 +53,7 @@ header img{
 }
 
 .nav-container a:hover, ul li a i:hover, .cerrar-menu i:hover{
-    color: rgb(180,157,131);
+    color: rgb(237,169,39);
 }
 
 .abrir-menu, .cerrar-menu{
@@ -98,17 +99,141 @@ main{
 .presentacion .marca a p{
     text-align: center;
     font-size: 30px;
-    color: rgb(180,157,131);
+    font-weight: 600;
+    color: rgb(237,169,39);
     -webkit-text-stroke: 1px #1a1515;
     margin: auto;
+}
+
+/* formulario*/
+
+.club{
+    width: 100%;
+    display: flex;
+    margin: 60px auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.228);
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(to left, #f5b30d, #f9a201);
+}
+
+#formulario input{
+	background-color: #eee;
+    border: none;
+    border-radius: 8px;
+	padding: 24px 10px;
+	margin: 8px 0;
+	width: 100%;
+    font-size: 20px;
+}
+
+#agregar-socio{
+    width: 60%;
+    margin-top: 30px;
+    overflow-y: hidden;
+
+}
+
+#invitacion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #FFF;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+#boton-club{
+    border-radius: 10px;
+    border-color: #fefeaf;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 80px;
+    letter-spacing: 2px;
+    margin: 30px auto;
+}
+
+#boton-club span{
+    margin: auto;
+}
+
+#boton-club:hover{
+    border-radius: 10px;
+    border-color: #0a0909;
+    background-color: transparent;
+    color: #060505;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 80px;
+    letter-spacing: 2px;
+    margin: 30px auto;
+}
+
+.tarjeta-socio{
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(to left, #f5bf35, #f9a201);   
+    
+}
+
+#nueva-tarjeta{
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    border: 3px solid;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 18px 60px;
+    letter-spacing: 2px;
+    margin: 50px 80px 50px 50px;
+}
+
+#nueva-tarjeta p{
+    font-size: 30px;
+    margin: 20px 
+}
+
+#nueva-tarjeta h2{
+    font-size: 50px;
+    margin: 20px; 
+}
+
+#nueva-tarjeta i{
+    font-size: 40px;    
+    margin-left: 80%; 
 }
 
 /* nueva seccion */
 
 .otoño-invierno{
-    width: 100vw;
+    width: 100%;
     display: flex;
-    margin: 60px auto;
+    margin: 60px 0;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
 }
 
@@ -116,56 +241,61 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 300px;
+    width: 50%;
+    height: 500px;
 }
 
 .otoño-invierno .descripcion .coleccion{
-    width: 30vw;
-    max-height:300px;
-}
-
-.otoño-invierno .descripcion .coleccion h2{
-    font-size: 30px;
-}
-
-.otoño-invierno .descripcion .coleccion p{
-    font-size: 20px;
-    font-weight: 500;
-    margin: 20px auto;
-}
-
-.otoño-invierno .descripcion .coleccion h2, .otoño-invierno .descripcion .coleccion p{
-    text-align: center;
+    width: 28vw;
 }
 
 .otoño-invierno a{
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.otoño-invierno .animacion{
+    font-size: 25px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.otoño-invierno .animacion:hover{
+    font-size: 30px;
+    transition: .3s ease;
+}
+
+.otoño-invierno a .descripcion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
 }
 
 .otoño-invierno a .imagen-venta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://1.bp.blogspot.com/-LBjXVqk0vfw/XHt6FDml8HI/AAAAAAABnvY/lVPHHEg7UiAs3oyy-aAZsjCZRuD2NEYVwCEwYBhgL/w1200-h630-p-k-no-nu/moda%2Boto%25C3%25B1o%2Binvierno%2B2019%2Bargentina.jpg);
+
+}
+
+.otoño-invierno a .imagen-venta,.otoño-invierno a .descripcion{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 300px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://1.bp.blogspot.com/-LBjXVqk0vfw/XHt6FDml8HI/AAAAAAABnvY/lVPHHEg7UiAs3oyy-aAZsjCZRuD2NEYVwCEwYBhgL/w1200-h630-p-k-no-nu/moda%2Boto%25C3%25B1o%2Binvierno%2B2019%2Bargentina.jpg);
-    background-size: 100%;
-    background-position: top;
+    width: 49.5vw;
+    height: 500px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
 .otoño-invierno a .imagen-venta .coleccion h2{
-    font-size: 30px;
     color: white;
     margin: auto;
-}
+} 
 
 /* nueva seccion */
 
 .productos .destacados{
-    margin:40px auto;
+    margin: 40px auto;
 }
 
 .productos .destacados h4{
@@ -208,7 +338,7 @@ main{
     font-weight: 600;
     padding:16px 34px;
     border-radius: 5px;
-    background-color: rgb(180,157,131,0.8);
+    background-color:rgb(237,169,39);
 }
 
 .productos .catalogo .elemento .precio a:hover{
@@ -216,9 +346,9 @@ main{
     color: black;
     font-size: 16px;
     font-weight: 600;
-    padding:16px 34px;
+    padding: 16px 34px;
     border-radius: 5px;
-    background-color: rgba(102, 85, 65, 0.8);
+    background-color: rgba(237,169,39,0.7);
     box-shadow: 0 5px 5px 0px rgba(0,0,0,0.3);
 }
 
@@ -278,122 +408,21 @@ footer .container ul li i{
     color: black;
 }
 
+footer .container ul li i:hover{
+    color: rgb(237,169,39);
+}
+
+
 .container p{
     text-align:center;
 }
 
-/* formulatio*/
-
-.club{
-    width: 100vw;
-    display: flex;
-    margin: 60px auto;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.228);
-}
-
-#formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50vw;
-    height: 500px;
-    background: linear-gradient(to left, #f5bf35, #f9a201);
-}
-
-
-#formulario input {
-	background-color: #eee;
-    border: none;
-    border-radius: 8px;
-	padding: 24px 70px;
-	margin: 8px 0;
-	width: 100%;
-    font-size: 20px;
-}
-
-#invitacion{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    width: 50vw;
-    height: 500px;
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-    
-}
-
-#boton-club{
-    border-radius: 20px;
-    border-color: #fefeaf;
-    background-color: transparent;
-    color: #FFFFFF;
-    font-size: 23px;
-    font-weight: bold;
-    padding: 18px 80px;
-    letter-spacing: 2px;
-    margin: 30px 0 0 60px;
-}
-
-#boton-club:hover{
-    border-radius: 20px;
-    border-color: #0a0909;
-    background-color: transparent;
-    color: #060505;
-    font-size: 23px;
-    font-weight: bold;
-    padding: 18px 80px;
-    letter-spacing: 2px;
-    margin: 30px 0 0 60px;
-}
-
-.tarjeta-socio{
-    display: flex;
-    justify-content: center;
-    align-items:  flex-start;
-    flex-direction: column;
-    width: 50vw;
-    height: 500px;
-    background: linear-gradient(to left, #f5bf35, #f9a201);   
-    
-}
-
-#nueva-tarjeta{
-    border-radius: 20px;
-    border-color: #FFFFFF;
-    border: 3px solid;
-    background-color: rgba(0, 0, 0, 0.08);
-    color: #FFFFFF;
-    font-size: 23px;
-    font-weight: bold;
-    padding: 18px 60px;
-    letter-spacing: 2px;
-    margin: 50px 80px 50px 50px;
-}
-
-#nueva-tarjeta p {
-    font-size: 30px;
-    margin: 20px 
-}
-
-#nueva-tarjeta h2{
-    font-size: 50px;
-    margin: 20px 
-}
-
-#nueva-tarjeta i{
-    font-size: 40px;    
-    margin-left: 80%; 
-}
-
-
-
-
 /* configuracion responsive a 750px */
 
 @media screen and (max-width: 750px){
+    *{
+        scroll-behavior: auto;
+    }
 
     header{
         justify-content: space-around;
@@ -460,11 +489,10 @@ footer .container ul li i{
     /* main */
     /* Nueva seccion */
     .presentacion{
-        width: 99vw;
+        width: 100%;
         margin: -10px 0 0 0;
-        max-height: 320px;
-        background-size:cover;
-        box-shadow: none;
+        height: 350px;
+        background-size: cover;
     }
 
     .presentacion .marca h1{
@@ -476,27 +504,66 @@ footer .container ul li i{
         font-size: 15px;
     }
 
+    /* Nueva seccion*/
+
+    .club{
+        flex-direction: column-reverse;
+    }
+
+    #formulario, #invitacion{
+        width: 100%;
+        height: 350px;
+    }
+
+    #invitacion{
+        background-size: 120%;
+
+    }
+
+    #boton-club{
+        padding: 10px 40px;
+    }
+
+    #boton-club:hover{
+        padding: 10px 40px;
+    }
+
+    #formulario input{
+        background-color: #eee;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 3px 0;
+        width: 100%;
+        font-size: 15px;
+    }
+    #agregar-socio{
+        width: 80%;
+    }
+
     /* Nueva seccion */
     
     .otoño-invierno{
-        margin: auto;
         display: block;
     }
 
-    .otoño-invierno .descripcion{
-        width: 99vw;
-        height: 250px;
+    .otoño-invierno a .descripcion, .otoño-invierno a .imagen-venta{
+        width: 100vw;
+        height: 350px;
     }
 
-    .otoño-invierno .descripcion .coleccion{
+    .otoño-invierno a{
+        margin: 10px 0 0 0;
+    } 
+
+    .otoño-invierno a .descripcion .coleccion{
         text-align: center;
         width: 80vw;
     }
 
     .otoño-invierno a .imagen-venta{
-            width: 99vw;
-            height: 200px;
-            background-size: 100%;
+        background-size: cover;
+        margin: 10px 0 0 0;
     }
 
     .otoño-invierno .descripcion .coleccion h2, .imagen-venta .coleccion h2{
